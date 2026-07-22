@@ -54,6 +54,8 @@
         $amount = number_format(doubleval($datos[0]['pago_valor']), 2, '.', '');
         $currency      = $moneda = ($datos[0]['tipo'] == 'Extranjero') ? "USD" : "COP";
 
+        
+
         // Cálculo de IVA (19% sobre base sin IVA)
         // Si el congreso ya incluye IVA en el valor, separamos:
         // base = round(amount / 1.19, 2)  →  tax = amount - base
@@ -65,7 +67,7 @@
         
         {
             http_response_code(200);
-            echo json_encode(["datos" => $datos, "firma" => $firma, "merchantId" => $merchantId, "accountId" => $accountId, "referenceCode" => $referenceCode, "amount" => $amount, "currency" => $currency,  "urlPago" => $urlPago, "test" => $test]);
+            echo json_encode(["datos" => $datos, "iva"=> $iva, "firma" => $firma, "merchantId" => $merchantId, "accountId" => $accountId, "referenceCode" => $referenceCode, "amount" => $antesdeiva, "currency" => $currency,  "urlPago" => $urlPago, "test" => $test]);
         
         }
     }

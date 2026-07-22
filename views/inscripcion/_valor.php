@@ -23,6 +23,7 @@
     {
         $total  = 0;
         $moneda = "COP";
+        $iva = 0;
     }
     else
     {
@@ -35,26 +36,34 @@
                 {
                     $total  = $p['Particular'];
                     $moneda = "COP";
+                    $iva = 19;
                 }
                 elseif ($tipo == 'Estudiante')
                 {
                     $total  = $p['Estudiante'];
                     $moneda = "COP";
+                    $iva = 0;
                 }
                 elseif ($tipo == 'Extranjero')
                 {
                     $total  = $p['Extranjero'];
                     $moneda = "USD";
+                    $iva = 0;
                 }
                 else
                 {
                     $total  = 0;
                     $moneda = "COP";
+                    $iva = 0;
                 }
                 break;
             }
         }
     }
+
+    $antesdeiva = $total;
+
+    $total = $total + ($total * $iva / 100); 
 
    
 

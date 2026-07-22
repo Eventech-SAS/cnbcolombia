@@ -155,9 +155,11 @@ document.addEventListener('DOMContentLoaded', function() {
 										<input type="hidden" name="merchantId"      value="764001">
 										<input type="hidden" name="accountId"       value="770591">
 										<input type="hidden" name="description"     value="24 CONGRESO INTERNACIONAL DEL COLEGIO NACIONAL DE BACTERIOLOGÍA 2026">
-										<input type="hidden" name="referenceCode" value="${data['referenceCode']}">
-										<input type="hidden" name="amount"        value="${data['amount']}">
-										<input type="hidden" name="currency" value="${data['currency']}">
+										<input type="hidden" name="referenceCode" 	value="${data['referenceCode']}">
+										<input type="hidden" name="amount"        	value="${parseInt(data['amount']) + (parseInt(data['amount']) * parseInt(data['iva']) / 100)}">
+										<input type="hidden" name="tax"        		value="${parseInt(data['amount']) * parseInt(data['iva']) / 100}">
+										<input type="hidden" name="taxReturnBase"	value="${parseInt(data['amount'])}">
+										<input type="hidden" name="currency" 		value="${data['currency']}">
 										<input type="hidden" name="signature"     value="${data['firma']}">
 										<input type="hidden" name="test"            value="0">
 										<input type="hidden" name="buyerFullName"   value="${datos[0]['nombres']} ${datos[0]['apellidos']}">
