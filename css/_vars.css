@@ -1,0 +1,43 @@
+/* Variables de configuración */
+:root{
+/* Colores Básicos */
+	--primario: #1A3C7A;;
+	--secundario: #041F1F;
+	--highlight: var(--primario);
+
+	--primariolight: #F28A6B;
+
+/* Colores de Menú */
+	--menufondo: #031919; 
+	--menuhover: #0e4687 ;
+	--menuselected: #0e4687;
+	--menumobile: #031919; 
+
+/* Colores predefinidos */
+	--amarillo: #F1AD4C;
+	--azul: #3379B4;
+	--rojo: #8f302c;
+	--verde: #5DB75D;
+	--azulclaro: #5DC0E0;
+	--gris: #AAA;
+	--naranja: #FF8000;
+	--violeta: #6334A8;
+
+/* Fondo y color de body */
+	--bodyFondo: #FAFAFA;
+	--bodyColor: #333333;
+
+/* Fuentes */
+	--mainFont: 'Montserrat', sans-serif;
+    --secFont: 'Montserrat', sans-serif;	
+
+/* Bordes */
+	--borderRadiusBotones: 5px;
+
+	--scrollBarColor: #797979;
+
+
+	/* Colores específicos para cliente */
+	--primariocliente: #0e4687;
+	--secundariocliente: #f08d21;
+}

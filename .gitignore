@@ -1,0 +1,9 @@
+*.log
+inc/mail
+inc/qrcode
+*.zip
+documentos/
+*.pdf
+qr_generados/
+.DS_Store
+Thumbs.db

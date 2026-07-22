@@ -1,0 +1,85 @@
+
+/* ----------------------------------------------------------------------------------------------------------------- BODY - HTML */                    
+body, input, button, html, textarea{font-family: var(--mainFont); font-size: 14px; color: var(--bodyColor) ;background-color: var(--bodyFondo); } 
+																												/* Barra desplazamiento */
+::-webkit-scrollbar {background-color: #EAEAEA ;}
+::-webkit-scrollbar:vertical {width:8px;}
+::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {display: none;} 
+::-webkit-scrollbar:horizontal {height: 10px;}
+::-webkit-scrollbar-thumb {background-color: var(--scrollBarColor); border-radius: 20px; border: 1px solid transparent ;}
+::-webkit-scrollbar-track {border-radius: 10px;}
+																												/* Headers */
+h1{font-family: var(--secFont); font-size: 24px; text-transform: uppercase;}
+h2{font-family: var(--secFont); font-size: 20px; text-transform: uppercase; font-weight: bold; margin: 0; margin-bottom: 20px;}
+																												/* enlaces */
+a{color: var(--highlight);font-style: italic;}
+a:hover{font-weight: bold;}
+/* ----------------------------------------------------------------------------------------------------------------- FORMS */
+																												/* inputs */
+																												/* inputs */
+.input-field input, .input-field textarea, .parametros input{border: 1px solid #AAA !important; border-radius: var(--borderRadiusBotones) !important;
+	padding: 0px 10px !important; box-sizing: border-box !important; height: 2.1rem !important; margin-bottom: 0px !important; font-size: 14px !important;}
+.input-field>label{top: -5px !important}
+.input-field input:focus:not([readonly])+label, .input-field textarea:focus:not([readonly])+label{color: var(--primario)!important;}
+.input-field input:focus:not([readonly]), .input-field textarea:focus:not([readonly]){border:  1px solid var(--primario) !important; box-shadow: none !important;}
+.input-field textarea{padding-top: 5px !important; padding-bottom: 5px !important; height: 100px !important;}
+.input-field input[readonly], .input-field textarea[readonly], input[readonly]{border-style: dashed !important;}/* iti - teléfonos */
+.file-field .btn{position: absolute; }
+.file-field .file-path-wrapper{padding-left: 0px !important;}
+.file-field label {font-size: 11px;  margin-top: -26px;}
+
+.iti{width: 100%; input{padding-left: 50px !important;} }
+																											/* text editor quill */
+.ql-editor{font-family: 'Montserrat'; font-size: 16px}
+.ql-editor img {max-width: 400px !important; margin: 0 auto; display: block;}
+																											/* selectize */
+.selectize-control{line-height: 0px !important;}
+.selectize-input{ box-sizing: border-box !important; height: 2.1rem; font-size: 14px; line-height: 2.1rem !important;
+	padding: 0px 10px !important; border: 1px solid #AAA !important; border-radius: var(--borderRadiusBotones) !important; margin: 0px 0px 0px 0px !important; input{font-size: 14px;}}
+.select{position: relative;margin-top: 1rem;margin-bottom: 1rem;}
+.select label{position: absolute;transform: translateY(-14px) scale(1);	margin-top: -5px;}
+.selectize-dropdown{top: 34px !important;}
+.selectize-control .locked{border-style: dashed !important;}
+.selectize-input > input{width: 100% !important;}
+																												/* buttons */
+.btn-ppal{width: 100%; border-radius: var(--borderRadiusBotones) !important; background-color: var(--primario);}
+.btn-ppal:hover, .btn-ppal:active .btn-ppal:focus{background-color: var(--secundario) !important;}
+.btn-sec{width: 100%; border-radius: var(--borderRadiusBotones) !important;background-color: var(--secundario);}
+.btn-sec:hover, .btn-sec:active .btn-sec:focus{background-color: var(--primario) !important;}
+button:focus{background-color: var(--primariolight);}
+																												/* checkboxes y radios */
+[type="checkbox"]:checked+span:not(.lever):before{	border-right: 2px solid var(--primario); border-bottom: 2px solid var(--primario);}
+
+/* ----------------------------------------------------------------------------------------------------------------- VARIOS */
+																												/* Loader */
+.loader{text-align: center;	display: flex; 	align-items: center; justify-content: center; top: 0px; left: 0px; 
+	background-color: rgb(0,0,0,0.6); 	height: 100vh; width: 100vw; position: fixed; z-index: 99999;}
+.loader img{max-width: 200px;}
+.loader-text{ color: #FFF;}
+.progress{ background-color: #FFF; }
+.indeterminate {background-color: var(--primario) !important;}
+
+/* Selectize 37,39*/
+.imagen-lista{max-width: 400px; max-height: 40px; display: block; margin: 0 auto; cursor: pointer;}
+.imagen-modal{max-width: 100%; display: block; margin: 0 auto;}
+
+
+.file-field .btn{
+    opacity: 1 !important;
+    width: 80px !important;
+    right: 11px !important;
+    line-height: 30px !important;
+    height: 29px !important;
+    border-radius: 0px 5px 5px 0px !important;
+    background-color: var(--primario) !important;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after{
+	background-color: var(--primario) !important;
+}
+.myswitch label{
+	font-size: 12px !important;
+}
+.switch{
+	min-height: 60px !important;
+}

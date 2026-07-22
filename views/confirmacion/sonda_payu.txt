@@ -1,0 +1,91 @@
+==========================================
+FECHA/HORA    : 2026-07-21 15:24:32
+IP ORIGEN     : 54.158.171.129
+REFERENCIA    : 1007178837-1784665418
+ESTADO POL    : 6
+VALOR RECIBIDO: 1.00
+VALOR FIRMA   : 1.00
+FIRMA PAYU    : a43376159db105bb98f998e2a8bb454e
+FIRMA LOCAL   : a0115fcb634018a3feb337f5cdb5d0a0
+ESTADO FIRMA  : INVÁLIDA
+PAYLOAD POST  : {"date":"2026.07.21 03:24:32","pse_reference3":"","payment_method_type":"2","pse_reference2":"","franchise":"AMEX","pse_reference1":"","shipping_city":"","bank_referenced_name":"","sign":"a43376159db105bb98f998e2a8bb454e","extra2":"","extra3":"","operation_date":"2026-07-21 15:24:32","payment_request_state":"R","billing_address":"ASDASDASDAS","extra1":"","administrative_fee":"0.00","administrative_fee_tax":"0.00","bank_id":"1072","nickname_buyer":"","payment_method":"1072","attempts":"1","transaction_id":"7d76d39c-5d9f-4c6e-9e1f-253004c7e837","transaction_date":"2026-07-21 15:24:32","test":"0","exchange_rate":"1.00","ip":"172.68.12.114","reference_pol":"2157647293","cc_holder":"Sergio Andrés Cárdenas Muñoz APPROVED","tax":"0.16","antifraudMerchantId":"","pse_bank":"","transaction_type":"AUTHORIZATION_AND_CAPTURE","state_pol":"6","billing_city":"CALI","phone":"+573165661134","error_message_bank":"Error on Purchase Order, [404 Not Found] during [POST] to [http:\/\/localhost:1080\/purchase-order] [CredibancoPurchaseApiFeignClient#doPurchaseOrder(Map,PurchaseOrderRequest)]: [{\"errorCode\":400,\"errorMessage\":\"Please verify the information\",\"data\":{\"STATUS\":\"ERROR\"}}] with transaction Id [7d76d39c-5d9f-4c6e-9e1f-253004c7e837]","shipping_country":"CO","error_code_bank":"","cus":"2157647293","customer_number":"","description":"24 CONGRESO INTERNACIONAL DEL COLEGIO NACIONAL DE BACTERIOLOGÍA 2026","merchant_id":"508029","administrative_fee_base":"0.00","currency":"COP","shipping_address":"","nickname_seller":"","cc_number":"***********0864","installments_number":"1","value":"1.00","billing_country":"CO","cardType":"CREDIT","response_code_pol":"9996","payment_method_name":"AMEX","office_phone":"","email_buyer":"analista.desarrollo@eventechcolombia.com","payment_method_id":"2","response_message_pol":"PAYMENT_NETWORK_NO_CONNECTION","account_id":"512321","bank_referenced_code":"CREDIT","airline_code":"","pseCycle":"null","risk":"","reference_sale":"1007178837-1784665418","additional_value":"0.00"}
+==========================================
+
+==========================================
+FECHA/HORA    : 2026-07-21 15:25:06
+IP ORIGEN     : 54.158.171.129
+REFERENCIA    : 1007178837-1784665418
+ESTADO POL    : 4
+VALOR RECIBIDO: 1.00
+VALOR FIRMA   : 1.00
+FIRMA PAYU    : ba03e0152876195897a3d79e0bbcbcf0
+FIRMA LOCAL   : a0115fcb634018a3feb337f5cdb5d0a0
+ESTADO FIRMA  : INVÁLIDA
+PAYLOAD POST  : {"date":"2026.07.21 03:25:06","pse_reference3":"","payment_method_type":"2","pse_reference2":"","franchise":"AMEX","commision_pol":"0.00","pse_reference1":"","shipping_city":"","bank_referenced_name":"","sign":"ba03e0152876195897a3d79e0bbcbcf0","extra2":"","extra3":"","operation_date":"2026-07-21 15:25:06","payment_request_state":"A","billing_address":"ASDASDASDAS","extra1":"","administrative_fee":"0.00","administrative_fee_tax":"0.00","bank_id":"1072","nickname_buyer":"","payment_method":"1072","attempts":"1","transaction_id":"9679600b-d303-446f-ad45-f10bb087aaa4","transaction_date":"2026-07-21 15:25:06","test":"0","exchange_rate":"1.00","ip":"172.68.12.114","reference_pol":"2157647293","cc_holder":"Sergio Andrés Cárdenas Muñoz APPROVED","tax":"0.16","antifraudMerchantId":"","pse_bank":"","transaction_type":"AUTHORIZATION_AND_CAPTURE","state_pol":"4","billing_city":"CALI","phone":"+573165661134","error_message_bank":"","shipping_country":"CO","error_code_bank":"00","cus":"630580708344","commision_pol_currency":"","customer_number":"","description":"24 CONGRESO INTERNACIONAL DEL COLEGIO NACIONAL DE BACTERIOLOGÍA 2026","merchant_id":"508029","administrative_fee_base":"0.00","authorization_code":"123456","currency":"COP","shipping_address":"","nickname_seller":"","cc_number":"***********0864","installments_number":"1","value":"1.00","transaction_bank_id":"123456","billing_country":"CO","cardType":"CREDIT","response_code_pol":"1","payment_method_name":"AMEX","office_phone":"","email_buyer":"analista.desarrollo@eventechcolombia.com","payment_method_id":"2","response_message_pol":"APPROVED","account_id":"512321","bank_referenced_code":"CREDIT","airline_code":"","pseCycle":"null","risk":"","reference_sale":"1007178837-1784665418","additional_value":"0.00"}
+==========================================
+
+==========================================
+FECHA/HORA    : 2026-07-21 15:35:01
+IP ORIGEN     : 54.158.171.129
+REFERENCIA    : 94538165-1784665939
+ESTADO POL    : 4
+VALOR RECIBIDO: 350.00
+VALOR FIRMA   : 350.00
+FIRMA PAYU    : 884f4a7f262590d936340d01c170cc21
+FIRMA LOCAL   : 6b83c6d4af5edda0de2ff0f74938c056
+ESTADO FIRMA  : INVÁLIDA
+PAYLOAD POST  : {"date":"2026.07.21 03:35:01","pse_reference3":"","payment_method_type":"2","pse_reference2":"","franchise":"VISA","commision_pol":"0.00","pse_reference1":"","shipping_city":"","bank_referenced_name":"","sign":"884f4a7f262590d936340d01c170cc21","extra2":"","extra3":"","operation_date":"2026-07-21 15:35:01","payment_request_state":"A","billing_address":"Cra 25 No. 19A - 26","extra1":"","administrative_fee":"0.00","administrative_fee_tax":"0.00","bank_id":"44","nickname_buyer":"","payment_method":"44","attempts":"1","transaction_id":"9b03105e-20f0-42a1-8d93-419c47e31d8c","transaction_date":"2026-07-21 15:35:01","test":"0","exchange_rate":"1.00","ip":"104.22.86.151","reference_pol":"2157647402","cc_holder":"APPROVED","tax":"55.88","antifraudMerchantId":"","pse_bank":"","transaction_type":"AUTHORIZATION_AND_CAPTURE","state_pol":"4","billing_city":"AIXIRIVALL","phone":"+573172404188","error_message_bank":"","shipping_country":"CO","error_code_bank":"00","cus":"00006535-00000219148","commision_pol_currency":"","customer_number":"","description":"24 CONGRESO INTERNACIONAL DEL COLEGIO NACIONAL DE BACTERIOLOGÍA 2026","merchant_id":"508029","administrative_fee_base":"0.00","authorization_code":"012747","currency":"COP","shipping_address":"","nickname_seller":"","cc_number":"************1111","installments_number":"1","value":"350.00","transaction_bank_id":"012747","billing_country":"CO","cardType":"DEBIT","response_code_pol":"1","payment_method_name":"VISA","office_phone":"","email_buyer":"jevelascog84@gmail.com","payment_method_id":"2","response_message_pol":"APPROVED","account_id":"512321","bank_referenced_code":"DEBIT","airline_code":"","pseCycle":"null","risk":"","reference_sale":"94538165-1784665939","additional_value":"0.00"}
+==========================================
+
+==========================================
+FECHA/HORA    : 2026-07-21 17:01:11
+IP ORIGEN     : 190.66.123.118
+REFERENCIA    : 1007178837-1748291234
+ESTADO POL    : 4
+VALOR RECIBIDO: 750000
+VALOR FIRMA   : 750000.0
+FIRMA PAYU    : 4d6b5efea1021df723fe52e1f6e2277b
+FIRMA LOCAL   : 5b0100f943b794c0f57d65fdd12bffa4
+ESTADO FIRMA  : INVÁLIDA
+PAYLOAD POST  : {"reference_sale":"1007178837-1748291234","state_pol":"4","value":"750000","currency":"COP","sign":"4d6b5efea1021df723fe52e1f6e2277b"}
+==========================================
+
+==========================================
+FECHA/HORA    : 2026-07-21 17:05:31
+IP ORIGEN     : 190.66.123.118
+REFERENCIA    : 1007178837-1748291234
+ESTADO POL    : 4
+VALOR RECIBIDO: 750000
+VALOR FIRMA   : 750000.0
+FIRMA PAYU    : 3f1a23a77bd55b7ee75e72dcb78b03cd
+FIRMA LOCAL   : 5b0100f943b794c0f57d65fdd12bffa4
+ESTADO FIRMA  : INVÁLIDA
+PAYLOAD POST  : {"reference_sale":"1007178837-1748291234","state_pol":"4","value":"750000","currency":"COP","sign":"3f1a23a77bd55b7ee75e72dcb78b03cd"}
+==========================================
+
+==========================================
+FECHA/HORA    : 2026-07-21 17:09:08
+IP ORIGEN     : 190.66.123.118
+REFERENCIA    : 1007178837-1748291234
+ESTADO POL    : 4
+VALOR RECIBIDO: 750000.00
+VALOR FIRMA   : 750000.00
+FIRMA PAYU    : 0235ba03bdf02fb9d2bbc27eb07e77c5
+FIRMA LOCAL   : 5f6e4c479b77e1ad75dcea7cc9e93c8e
+ESTADO FIRMA  : INVÁLIDA
+PAYLOAD POST  : {"reference_sale":"1007178837-1748291234","state_pol":"4","value":"750000.00","currency":"COP","sign":"0235ba03bdf02fb9d2bbc27eb07e77c5"}
+==========================================
+
+==========================================
+FECHA/HORA    : 2026-07-21 17:12:25
+IP ORIGEN     : 190.66.123.118
+REFERENCIA    : 1007178837-1748291234
+ESTADO POL    : 4
+VALOR RECIBIDO: 750000.00
+VALOR FIRMA   : 750000.00
+FIRMA PAYU    : 5f6e4c479b77e1ad75dcea7cc9e93c8e
+FIRMA LOCAL   : 5f6e4c479b77e1ad75dcea7cc9e93c8e
+ESTADO FIRMA  : INVÁLIDA
+PAYLOAD POST  : {"reference_sale":"1007178837-1748291234","state_pol":"4","value":"750000.00","currency":"COP","sign":"5f6e4c479b77e1ad75dcea7cc9e93c8e"}
+==========================================
+

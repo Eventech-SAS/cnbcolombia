@@ -1,0 +1,4 @@
+[23-Jun-2026 08:16:52 America/Bogota] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/imbanaco-iconicc.eventos26.eventechvirtual.com/public_html/views/validacion../../../mod/footer_front.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/imbanaco-iconicc.eventos26.eventechvirtual.com/public_html/views/validacion/validacion.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/imbanaco-iconicc.eventos26.eventechvirtual.com/public_html/views/validacion/validacion.php on line 16
