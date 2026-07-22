@@ -24,12 +24,7 @@
         $merchantId = "764001";
         $new_value  = number_format(round(floatval($valorPayU), 2), 2, '.', '');
         $firmaLocal = md5("$apiKey~$merchantId~$referenceCode~$new_value~$moneda~$estadoPayU");
-         echo "$apiKey~$merchantId~$referenceCode~$new_value~$moneda" ;
-
-
-        echo "Firma local: $firmaLocal<br>";
-        echo "Firma PayU: $firmaPayU<br>";
-        
+                
 
         $logFile = __DIR__ . "/sonda_payu.txt";
         $logData = "==========================================" . PHP_EOL;
