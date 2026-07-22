@@ -541,8 +541,9 @@ document.addEventListener('DOMContentLoaded', function() {
 				var tipoGuardado = localStorage.getItem(`${prefixG}_tipo`);
 				if (tipoGuardado) {
 					selectsA['tipo'][0].selectize.setValue(tipoGuardado);
-					selectsA['tipo'][0].selectize.disable(); // bloquearlo para que no lo cambien
-					localStorage.removeItem(`${prefixG}_tipo`); // limpiar para no persistir en futuras visitas
+					// En lugar de disable(), solo bloqueamos visualmente
+					selectsA['tipo'][0].selectize.lock(); // lock() bloquea sin excluir del POST
+					localStorage.removeItem(`${prefixG}_tipo`);
 				}
 
 				//Cargamos los horarios
@@ -869,6 +870,7 @@ function controlFormulario()
 				xhr.addEventListener("error", errorHandler, false);
 				xhr.addEventListener("abort", abortHandler, false);
 				xhr.open('POST', `/views/${modulo}/_${modulo}.php`, true);
+				console.log("POST params:", params);
 				
 				xhr.send(params);
 				xhr.onreadystatechange = function()

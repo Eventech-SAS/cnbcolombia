@@ -97,6 +97,7 @@
         http_response_code(200);
         echo json_encode(["valido" => true]);
     }
+    
     else
     if($_POST['action'] == 'crear' || $_POST['action'] == 'editar')
     {  
@@ -141,7 +142,7 @@
             $_POST['cortesia_empresa'] = "";
             $cortesia = false;
         }
-
+        
         $tipo = $_POST['tipo'];
         include(__DIR__."/_valor.php");
         $_POST['pago_valor'] = $total;
