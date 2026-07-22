@@ -17,7 +17,7 @@ $moneda   = "COP";
 if ($cortesia === true) {
     $total  = 0;
     $moneda = "COP";
-} elseif ($tipo == 'Afiliado Colabiocli' || $tipo == 'Colegiado activo') {
+} elseif ($tipo == 'Afiliado Colabiocli' || $tipo == 'Colegiado activo' || $tipo == 'Funcionario') {
     $total  = 0;
     $moneda = "COP";
 } else {

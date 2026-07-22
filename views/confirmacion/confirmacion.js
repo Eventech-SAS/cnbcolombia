@@ -150,15 +150,15 @@ document.addEventListener('DOMContentLoaded', function() {
 									</form>
 								</div>-->
 								<div class="col s12 m4 mt-5" ${datos[0]['pago'] == "No" ? "" : "style='display:none;'"}>
-									<form action="https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu/" method="POST">
-										<input type="hidden" name="merchantId"      value="508029">
-										<input type="hidden" name="accountId"       value="512321">
+									<form action="https://checkout.payulatam.com/ppp-web-gateway-payu/" method="POST">
+										<input type="hidden" name="merchantId"      value="764001">
+										<input type="hidden" name="accountId"       value="770591">
 										<input type="hidden" name="description"     value="24 CONGRESO INTERNACIONAL DEL COLEGIO NACIONAL DE BACTERIOLOGÍA 2026">
 										<input type="hidden" name="referenceCode" value="${data['referenceCode']}">
 										<input type="hidden" name="amount"        value="${data['amount']}">
 										<input type="hidden" name="currency" value="${data['currency']}">
 										<input type="hidden" name="signature"     value="${data['firma']}">
-										<input type="hidden" name="test"            value="1">
+										<input type="hidden" name="test"            value="0">
 										<input type="hidden" name="buyerFullName"   value="${datos[0]['nombres']} ${datos[0]['apellidos']}">
 										<input type="hidden" name="buyerEmail"      value="${datos[0]['email']}">
 										<input type="hidden" name="buyerDocumentType" value="${datos[0]['tipo_documento']}">

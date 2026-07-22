@@ -8,6 +8,7 @@ RewriteRule ^$ views/validacion/validacion.php [L]
 RewriteRule ^inscripcion views/inscripcion/inscripcion.php [QSA,L]
 
 RewriteRule ^confirmacion/([^/]+)$ views/confirmacion/confirmacion.php?id=$1 [QSA,L]
+RewriteRule ^payu/confirmacion views/confirmacion/_confirmacion.php [QSA,L]
 
 
 RewriteCond %{HTTP:Authorization} ^(.*)

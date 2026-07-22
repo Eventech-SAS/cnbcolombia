@@ -11,7 +11,7 @@
 	
 	class correos
 	{
-        function mailPresencial($nombre, $email, $documento, $codigo)
+        function mailGeneral($nombre, $email, $documento, $codigo)
         {
            
 			$mail = new PHPMailer(true);
@@ -289,4 +289,5 @@
 			$mail->send();
 			return $mail;
 		}
+		
     }

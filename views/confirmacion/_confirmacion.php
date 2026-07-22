@@ -26,11 +26,11 @@
             echo json_encode(["message" => $datos['message'], "details" => "D1-1"]);
             exit();
         }
-        $merchantId = "508029";
-        $accountId  = "512321"; // Colombia
-        $apiKey     = "4Vj8eK4rloUd272L48hsrarnUA";
-        $urlPago    = "https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu/";
-        $test       = 1;
+        $merchantId = "764001";
+        $accountId  = "770591"; // Colombia
+        $apiKey     = "bPL9o1U5ZgQby6GZ5dx7vPqDUT";
+        $urlPago    = "https://checkout.payulatam.com/ppp-web-gateway-payu/";
+        $test       = 0;
 
         // Producción (comentar sandbox y descomentar esto cuando estés listo)
         // $merchantId = "TU_MERCHANT_ID";

@@ -110,6 +110,10 @@ function controlFormulario()
 							window.location.href = `/inscripcion`;
 							return;
 						}
+						else
+						{
+							window.location.href = `/confirmacion/${datos[0].codigo}`;
+						}
 
 						document.getElementById('loader').style.display = "none";
 					}

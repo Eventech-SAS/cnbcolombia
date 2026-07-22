@@ -5,14 +5,14 @@
 	define("PASS",'51@}#hwx%dCw');
 
 	define('SECRET_KEY', 'M}(l;,0L3XCCazqZDVsgKZ`H\9$XL^jsKaR<l4P`Q\z;4n!`£Y');
-	define('URLSITE', 'https://cnbcolombia.eventos26.eventechvirtual.com');
+	define('URLSITE', 'https://cnbcolombia-congreso.eventos26.eventechvirtual.com');
 	
 	//Depuración
 	define("DEBUG",false);
 	define("CLIENTE",'cnbcolombia');
 	define("EVENTO","24 CONGRESO INTERNACIONAL DEL COLEGIO NACIONAL DE BACTERIOLOGÍA 2026");
 	
-    define("VERSION","0.4.1");
+    define("VERSION","0.4.5");
 
 	$cms_max_results = [
 		"usuarios"=>20,

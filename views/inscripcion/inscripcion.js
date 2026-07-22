@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', function() {
 											<input type="checkbox" onchange="habilitarBoton(this)">
 											<span class="lever"></span>
 											<span class="texto-privacidad">
-											 Autorizo a la Clínica Imbanaco a tratar mis datos personales bajo su política de privacidad, la cual me comprometo a leer en: <a target="_blank" href="https://www.imbanaco.com/es_CO/politica-de-tratamiento-de-datos-personales">tratamiento de datos personales</a>
+											 Autorizo a la Clínica Imbanaco a tratar mis datos personales bajo su política de privacidad, la cual me comprometo a leer en: <a target="_blank" href="https://#">tratamiento de datos personales</a>
 											</span>
 											 </label>
 										</div>

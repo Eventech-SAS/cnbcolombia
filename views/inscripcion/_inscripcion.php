@@ -1,12 +1,12 @@
 <?php   
     //Configuración de módulo
     $prefijo = "cmp";
-    $campos = ["codigo", "tipo_documento", "documento", "documento_categoria", "documento_expedicion", "documento_expiracion", "nombres", "apellidos", "celular", "email", 
+    $campos = ["categoria","codigo", "tipo_documento", "documento", "documento_categoria", "documento_expedicion", "documento_expiracion", "nombres", "apellidos", "celular", "email", 
     "profesion", "ocupacion", "pais", "ciudad", "direccion", "tipo", "comprobante", "cortesia", "cortesia_empresa", "modalidad", "facturar_a", "tipo_documento_facturacion",
      "documento_facturacion", "documento_categoria_facturacion", "documento_expedicion_facturacion", "documento_expiracion_facturacion", 
     "nombre_facturacion", "telefono_facturacion", "email_facturacion", "pais_facturacion", "ciudad_facturacion", "direccion_facturacion", "fecha_nacimiento_facturacion", 
     "pago_comprobante", "pago", "pago_valor", "modificado", "creado", "id"];
-    $tipos = ['s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','d','s','s','i'];    
+    $tipos = ['s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','s','d','s','s','i'];    
     
 	require(__DIR__."/../../inc/funciones.php"); //Librería de funciones
     require(__DIR__."/../../inc/correos.php"); //Librería de funciones
@@ -20,9 +20,11 @@
     $creado = date("Y-m-d H:i:s");
 
     //Variables predefinidas
+   
     $_POST["codigo"] = $tools->getCode(20);
     $_POST["modificado"] = $creado;
     $_POST["creado"] = $creado; 
+
 
     
     if($_POST['action'] == 'getPaises')
@@ -76,7 +78,7 @@
     else
     if ($_POST['action'] == 'validarColegiado')
     {
-        $prepare = "SELECT id FROM evento26021_activos WHERE documento = ?";
+        $prepare = "SELECT id FROM evento26021_asociados WHERE documento = ?";
         $params  = [$_POST['documento'] . ""];
         $types   = ['s'];
         $result  = $toolSQL->selectSQL($prepare, $types, $params);
@@ -104,7 +106,7 @@
         //Validamos si hay cortesia
         if($_POST['cortesia'] != "")
         {
-            $prepare = "SELECT empresa, estado FROM {$tabla}_cortesias WHERE codigo = ?";
+            $prepare = "SELECT empresa, estado, categoria FROM {$tabla}_cortesias WHERE codigo = ?";
             $params = [$_POST['cortesia']];
             $types =  ['s'];
             $cortesia = $toolSQL->selectSQL($prepare, $types, $params, "Usuario");
@@ -121,6 +123,7 @@
                 echo json_encode(["message" => "La cortesía ingresada ya ha sido utilizada", "details" => "D1-4", "token" => ""]);
                 exit();
             }
+            
             $prepare = "UPDATE {$tabla}_cortesias SET estado = ? WHERE codigo = ?";
             $params = [1, $_POST['cortesia']];
             $types =  ['i', 's'];
@@ -131,13 +134,15 @@
                 echo json_encode(["message" => $cortesia['message'], "details" => "D1-5", "token" => ""]);
                 exit();
             }
-            
+            $_POST['cortesia_categoria'] = $cortesia[0]['categoria'];
             $_POST['cortesia_empresa'] = $cortesia[0]['empresa'];
+            
             $_POST['pago_valor'] = 0;
             $cortesia = true;
         }
         else
         {
+            $_POST['categoria'] = "Participante";
             $_POST['cortesia'] = "";
             $_POST['cortesia_empresa'] = "";
             $cortesia = false;
@@ -256,12 +261,8 @@
             QRcode::png($archivoQR, __DIR__.'/../../qr_generados/'.$archivoQR.'.png', QR_ECLEVEL_L, 6);
             
             //Respuesta si la consulta es exitosa
-            if($_POST['pago_valor'] == 0)
-                if($_POST['modalidad'] == "Virtual")
-                    $correos->mailVirtual($_POST['nombres']." ".$_POST['apellidos'], $_POST['email'], $_POST['documento'], $_POST['codigo']);
-                else
-                    $correos->mailPresencial($_POST['nombres']." ".$_POST['apellidos'], $_POST['email'], $_POST['documento'], $_POST['codigo']);
-
+            if ($_POST['pago_valor'] == 0 && !empty($_POST['email']))
+                 $correos->mailGeneral($_POST['nombres']." ".$_POST['apellidos'], $_POST['email'], $_POST['documento'], $_POST['codigo']);
 
             http_response_code(200);
             echo json_encode(["codigo" => $_POST['codigo']]);

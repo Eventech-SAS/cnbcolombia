@@ -1,23 +1,5 @@
-[23-Jun-2026 09:09:59 America/Bogota] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (to):  in /home/customer/www/imbanaco-iconicc.eventos26.eventechvirtual.com/public_html/inc/mail/PHPMailer.php:1082
-Stack trace:
-#0 /home/customer/www/imbanaco-iconicc.eventos26.eventechvirtual.com/public_html/inc/mail/PHPMailer.php(1004): PHPMailer\PHPMailer\PHPMailer->addOrEnqueueAnAddress('to', '', '')
-#1 /home/customer/www/imbanaco-iconicc.eventos26.eventechvirtual.com/public_html/inc/correos.php(36): PHPMailer\PHPMailer\PHPMailer->addAddress('', ' ')
-#2 /home/customer/www/imbanaco-iconicc.eventos26.eventechvirtual.com/public_html/views/inscripcion/_inscripcion.php(240): correos->mailPresencial(' ', '', '1007178837', 'weBnJq8E5RTKyuf...')
-#3 {main}
-  thrown in /home/customer/www/imbanaco-iconicc.eventos26.eventechvirtual.com/public_html/inc/mail/PHPMailer.php on line 1082
-[23-Jun-2026 09:11:20 America/Bogota] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (to):  in /home/customer/www/imbanaco-iconicc.eventos26.eventechvirtual.com/public_html/inc/mail/PHPMailer.php:1082
-Stack trace:
-#0 /home/customer/www/imbanaco-iconicc.eventos26.eventechvirtual.com/public_html/inc/mail/PHPMailer.php(1004): PHPMailer\PHPMailer\PHPMailer->addOrEnqueueAnAddress('to', '', '')
-#1 /home/customer/www/imbanaco-iconicc.eventos26.eventechvirtual.com/public_html/inc/correos.php(36): PHPMailer\PHPMailer\PHPMailer->addAddress('', ' ')
-#2 /home/customer/www/imbanaco-iconicc.eventos26.eventechvirtual.com/public_html/views/inscripcion/_inscripcion.php(240): correos->mailPresencial(' ', '', '1007178837', 'YSTw5Id0OPnIRQv...')
-#3 {main}
-  thrown in /home/customer/www/imbanaco-iconicc.eventos26.eventechvirtual.com/public_html/inc/mail/PHPMailer.php on line 1082
-[23-Jun-2026 10:19:52 America/Bogota] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: Invalid address:  (to):  in /home/customer/www/imbanaco-iconicc.eventos26.eventechvirtual.com/public_html/inc/mail/PHPMailer.php:1082
-Stack trace:
-#0 /home/customer/www/imbanaco-iconicc.eventos26.eventechvirtual.com/public_html/inc/mail/PHPMailer.php(1004): PHPMailer\PHPMailer\PHPMailer->addOrEnqueueAnAddress('to', '', '')
-#1 /home/customer/www/imbanaco-iconicc.eventos26.eventechvirtual.com/public_html/inc/correos.php(36): PHPMailer\PHPMailer\PHPMailer->addAddress('', ' ')
-#2 /home/customer/www/imbanaco-iconicc.eventos26.eventechvirtual.com/public_html/views/inscripcion/_inscripcion.php(240): correos->mailPresencial(' ', '', '94538111', 'oFIGv63mjGX4qx4...')
-#3 {main}
-  thrown in /home/customer/www/imbanaco-iconicc.eventos26.eventechvirtual.com/public_html/inc/mail/PHPMailer.php on line 1082
-[21-Jul-2026 17:00:15 America/Bogota] TIPO: Extranjero | TOTAL: 350 | MONEDA: USD
-[21-Jul-2026 17:13:36 America/Bogota] TIPO:  | TOTAL: 0 | MONEDA: COP
+[21-Jul-2026 21:18:56 America/Bogota] _valor.php | tipo: [Extranjero] | cortesia: [''] | fecha: 2026-07-21
+[21-Jul-2026 21:19:34 America/Bogota] _valor.php | tipo: [Extranjero] | cortesia: [''] | fecha: 2026-07-21
+[21-Jul-2026 21:19:38 America/Bogota] _valor.php | tipo: [Particular] | cortesia: [''] | fecha: 2026-07-21
+[21-Jul-2026 21:19:47 America/Bogota] _valor.php | tipo: [Extranjero] | cortesia: [''] | fecha: 2026-07-21
+[21-Jul-2026 21:19:52 America/Bogota] _valor.php | tipo: [Extranjero] | cortesia: [''] | fecha: 2026-07-21
