@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		{
 			if(xhr.status == 200)
 			{
+				console.log(xhr.responseText);
 				//Si la respuesta es correcta, cargamos las variables
 				var data = JSON.parse(xhr.responseText.trim());
 				var datos = data['datos'];	

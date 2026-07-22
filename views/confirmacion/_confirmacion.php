@@ -12,20 +12,31 @@
     
     $creado = date("Y-m-d H:i:s");
 
-    
-    
     if($_POST['action'] == 'getDatos')
     {   
+
         $prepare = "SELECT * FROM $tabla WHERE codigo = ?";
         $params = [$_POST['codigo']];
         $types =  ['s'];
         $datos = $toolSQL->selectSQL($prepare, $types, $params);
+        
         if(is_array($datos) && isset($datos['error']))
         {   //Respuesta si hay error en la consulta
             http_response_code($datos['error']);
             echo json_encode(["message" => $datos['message'], "details" => "D1-1"]);
             exit();
         }
+
+        $tipo = $datos[0]['tipo'];
+        $cortesia = false;
+        $confirmacion = true;
+
+        if($datos[0]['pago'] == "No")
+            include(__DIR__."/../inscripcion/_valor.php");
+
+        
+
+
         $merchantId = "764001";
         $accountId  = "770591"; // Colombia
         $apiKey     = "bPL9o1U5ZgQby6GZ5dx7vPqDUT";
