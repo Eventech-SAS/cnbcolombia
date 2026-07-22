@@ -342,7 +342,7 @@ document.addEventListener('DOMContentLoaded', function() {
 						// Si escogen CE, forzar tipo = Extranjero y bloquearlo
 						if (tipoDoc == "Cédula de Extranjería" || tipoDoc == "Pasaporte") {
 							selectsA['tipo'][0].selectize.setValue('Extranjero');
-							selectsA['tipo'][0].selectize.disable();
+							selectsA['tipo'][0].selectize.lock();
 						} else {
 							selectsA['tipo'][0].selectize.enable();
 							// Solo limpiar si estaba en Extranjero para no borrar una selección manual
@@ -542,7 +542,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				if (tipoGuardado) {
 					selectsA['tipo'][0].selectize.setValue(tipoGuardado);
 					// En lugar de disable(), solo bloqueamos visualmente
-					selectsA['tipo'][0].selectize.lock(); // lock() bloquea sin excluir del POST
+					selectsA['tipo'][0].selectize.lock(); // 
 					localStorage.removeItem(`${prefixG}_tipo`);
 				}
 
