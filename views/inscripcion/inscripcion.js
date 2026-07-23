@@ -149,6 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
 											<option value="" disabled selected>Seleccione una opción</option>
 											<option value="Colegiado activo">Colegiado activo</option>
 											<option value="Particular">Particular</option>
+											<option value ="Estudiante extranjero">Estudiante extranjero</option>
 											<option value="Extranjero">Extranjero</option>
 											<option value="Estudiante">Estudiante</option>
 											<option value="Funcionario">Funcionario</option>
@@ -357,7 +358,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 							// Mostrar/ocultar campo de comprobante (estudiante y afiliado)
 							var elemEstudiante = document.getElementsByClassName('estudiante');
-							if (tipoVal == "Estudiante" || tipoVal == "Afiliado Colabiocli") {
+							if (tipoVal == "Estudiante" || tipoVal == "Afiliado Colabiocli" || tipoVal == "Estudiante extranjero" ) {
 								for (var i = 0; i < elemEstudiante.length; i++)
 									elemEstudiante[i].style.display = "block";
 

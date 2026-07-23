@@ -5,8 +5,8 @@
     error_log("_valor.php | tipo: [" . $tipo . "] | cortesia: [" . var_export($cortesia, true) . "] | fecha: " . date("Y-m-d", $fecha));
 
     $datosPreventas = [
-        ['inicio' => strtotime("2026-03-04"), 'fin' => strtotime("2026-05-30"), 'preventa' => 1, 'Particular' => 750000, 'Estudiante' => 350000, 'Extranjero' => 350],
-        ['inicio' => strtotime("2026-06-01"), 'fin' => strtotime("2026-08-31"), 'preventa' => 2, 'Particular' => 850000, 'Estudiante' => 400000, 'Extranjero' => 400],
+        ['inicio' => strtotime("2026-07-22"), 'fin' => strtotime("2026-09-03"), 'preventa' => 1, 'Particular' => 710000, 'Estudiante' => 350000, 'Extranjero' => 300, 'Estudiante extranjero' => 150],
+        ['inicio' => strtotime("2026-09-03"), 'fin' => strtotime("2026-12-31"), 'preventa' => 2, 'Particular' => 930000, 'Estudiante' => 450000, 'Extranjero' => 400, 'Estudiante extranjero' => 250],
         ['inicio' => strtotime("2026-09-01"), 'fin' => strtotime("2026-10-31"), 'preventa' => 3, 'Particular' => 950000, 'Estudiante' => 450000, 'Extranjero' => 450],
     ];
 
@@ -21,7 +21,7 @@
     } 
     elseif($tipo == 'Afiliado Colabiocli' || $tipo == 'Colegiado activo' || $tipo == 'Funcionario')
     {
-        $total  = 0;
+        $total  = 450000;
         $moneda = "COP";
         $iva = 0;
     }
@@ -47,6 +47,12 @@
                 elseif ($tipo == 'Extranjero')
                 {
                     $total  = $p['Extranjero'];
+                    $moneda = "USD";
+                    $iva = 0;
+                }
+                elseif ($tipo == 'Estudiante extranjero')
+                {
+                    $total  = $p['Estudiante extranjero'];
                     $moneda = "USD";
                     $iva = 0;
                 }

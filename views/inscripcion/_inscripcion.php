@@ -134,7 +134,7 @@
                 echo json_encode(["message" => $cortesia['message'], "details" => "D1-5", "token" => ""]);
                 exit();
             }
-            $_POST['cortesia_categoria'] = $cortesia[0]['categoria'];
+            $_POST['categoria'] = $cortesia[0]['categoria'];
             $_POST['cortesia_empresa'] = $cortesia[0]['empresa'];
             
             $_POST['pago_valor'] = 0;

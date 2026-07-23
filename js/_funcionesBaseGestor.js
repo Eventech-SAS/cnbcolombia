@@ -1528,8 +1528,9 @@ function logoutFuncion(mensaje)
     
 }
 
-function precioFuncion(valor)
+function precioFuncion(valor, moneda)
 {
+    consolelog (valor,moneda);
     return new Intl.NumberFormat('es-CO', {
 		style: 'currency',
 		currency: 'COP',

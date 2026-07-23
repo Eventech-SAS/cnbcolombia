@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
 								<div class="col s12 m4" ${datos[0]['pago'] == "No" ? "" : "style='display:none;'"}>
 									<div class="pago">
 										Total a pagar:<br>
-										<span id="total_pagar" class="total_pagar">${precioFuncion(datos[0]['pago_valor'])}</span>
+										<span id="total_pagar" class="total_pagar">${precioFuncion(datos[0]['pago_valor'],(datos[0]['moneda']))}</span>
 
 									</div>
 								</div>

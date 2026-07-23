@@ -52,7 +52,7 @@
 
         $referenceCode = $datos[0]['documento'] . "-" . time();
         $amount = number_format(doubleval($datos[0]['pago_valor']), 2, '.', '');
-        $currency      = $moneda = ($datos[0]['tipo'] == 'Extranjero') ? "USD" : "COP";
+        $currency = in_array($datos[0]['tipo'], ['Extranjero', 'Estudiante extranjero']) ? "USD" : "COP";
 
         
 
